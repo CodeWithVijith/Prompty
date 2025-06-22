@@ -3,34 +3,19 @@ import Link from "next/link";
 import React from "react";
 import { promptCards } from "../prompts";
 
-// Dummy data
-// const items = Array.from({ length: 20 }, (_, i) => ({
-//   id: i,
-//   title: `Item ${i + 1}`,
-//   image: `https://picsum.photos/300/200?random=${i + 1}`,
-//   height: 150 + Math.round(Math.random() * 150),
-// }));
-
-// const promptCards = Array.from({ length: 20 }, (_, i) => ({
-//   id: i,
-//   beforeImg: "/Profile1.png",
-//   afterImg: "/GeneratedImg1.png",
-//   title: `Item ${i + 1}`,
-//   prompt:
-//     "A highly stylized portrait of same person in image with sharp features, flawless fair skin, wearing a black t-shirt, black sunglasses and standing against a bold red gradient background, confidently. The lighting is dramatic and cinematic, emphasizing his facial structure and giving a luxury fashion magazine vibe. Ultra-realistic, high-detail, editorial photography style. 4K resolution, symmetrical composition, minimal background elements. 4:3 ratio. ",
-//   height: 400 + Math.round(Math.random() * 150),
-// }));
-
 // Masonry Grid Component
 const MasonryGrid: React.FC = () => {
   return (
     <div
-      style={{
-        columnCount: 4,
-        columnGap: "16px",
-        maxWidth: 1200,
-        margin: "40px auto",
-      }}
+      className="
+                mx-auto my-10
+                [column-count:1]
+                sm:[column-count:2]
+                md:[column-count:3]
+                lg:[column-count:4]
+                [column-gap:16px]
+                max-w-[1200px]
+            "
     >
       {promptCards.map((card) => (
         <MasonryGridCard key={card.id} card={card} />
@@ -65,17 +50,6 @@ export default function Page() {
             Prompty
           </span>
         </div>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 shadow-lg bg-white rounded-lg">
-          {promptCards.map((card, idx) => (
-            <PromptCard
-              key={idx}
-              beforeImg={card.beforeImg}
-              afterImg={card.afterImg}
-              title={card.title}
-              prompt={card.prompt}
-            />
-          ))}
-        </div> */}
       </main>
     </div>
   );
