@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import { toast } from "sonner";
 
@@ -32,7 +33,7 @@ const MasonryGridCard: React.FC<MasonryGridCardProps> = ({ card }) => {
       className="group"
     >
       {/* Image swap on hover */}
-      <img
+      <Image
         src={card.beforeImg}
         alt={card.title}
         style={{
@@ -48,7 +49,7 @@ const MasonryGridCard: React.FC<MasonryGridCardProps> = ({ card }) => {
         }}
         className="group-hover:opacity-0"
       />
-      <img
+      <Image
         src={card.afterImg}
         alt={card.title + " after"}
         style={{
