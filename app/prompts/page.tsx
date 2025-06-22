@@ -1,16 +1,15 @@
-import { PromptCard } from "@/components/ui/PromptCard";
+import MasonryGridCard from "@/components/ui/MasonryGridCard";
 import Link from "next/link";
 import React from "react";
-import MasonryGridCard from "@/components/ui/MasonryGridCard";
 import { promptCards } from "../prompts";
 
 // Dummy data
-const items = Array.from({ length: 20 }, (_, i) => ({
-  id: i,
-  title: `Item ${i + 1}`,
-  image: `https://picsum.photos/300/200?random=${i + 1}`,
-  height: 150 + Math.round(Math.random() * 150),
-}));
+// const items = Array.from({ length: 20 }, (_, i) => ({
+//   id: i,
+//   title: `Item ${i + 1}`,
+//   image: `https://picsum.photos/300/200?random=${i + 1}`,
+//   height: 150 + Math.round(Math.random() * 150),
+// }));
 
 // const promptCards = Array.from({ length: 20 }, (_, i) => ({
 //   id: i,
