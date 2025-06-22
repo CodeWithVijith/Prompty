@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PromptCard } from "@/components/ui/PromptCard";
 import Link from "next/link";
+import { promptCards } from "./prompts";
 
 const stats = [
   { id: 1, label: "Prompts", value: "12.5k+" },
@@ -9,29 +10,29 @@ const stats = [
 ];
 
 // Add prompt data array
-const promptCards = [
-  {
-    beforeImg: "/Profile.png",
-    afterImg: "/GeneratedImg.png",
-    title: "Cyberpunk Street Style",
-    prompt:
-      "Ultra-detailed portrait of same person in image, dressed in cyberpunk attire with glowing neon accents, leather jacket, tech goggles, and vibrant blue-purple cityscape background. Futuristic lighting, cinematic composition, sci-fi fashion editorial. 4K, high-detail, dramatic shadows.",
-  },
-  {
-    beforeImg: "/Profile.png",
-    afterImg: "/GeneratedImg.png",
-    title: "Elegant Classic Look",
-    prompt:
-      "Portrait of the same person styled as a 1950s movie star, with vintage hairstyle, elegant white shirt, pearl earrings, soft lighting and beige satin backdrop. Graceful pose, timeless elegance, high-definition, soft-focus classic studio lighting. Vogue-style editorial.",
-  },
-  {
-    beforeImg: "/Profile.png",
-    afterImg: "/GeneratedImg.png",
-    title: "Warrior from Fantasy Realm",
-    prompt:
-      "Fantasy portrait of the same person as a battle-hardened warrior wearing a silver armor, holding a glowing sword, standing on a misty cliff with stormy skies. Cinematic mood, detailed textures, epic high-fantasy character shot, dramatic lighting, 4K game-art style.",
-  },
-];
+// const promptCards = [
+//   {
+//     beforeImg: "/Profile.png",
+//     afterImg: "/GeneratedImg.png",
+//     title: "Cyberpunk Street Style",
+//     prompt:
+//       "Ultra-detailed portrait of same person in image, dressed in cyberpunk attire with glowing neon accents, leather jacket, tech goggles, and vibrant blue-purple cityscape background. Futuristic lighting, cinematic composition, sci-fi fashion editorial. 4K, high-detail, dramatic shadows.",
+//   },
+//   {
+//     beforeImg: "/Profile.png",
+//     afterImg: "/GeneratedImg.png",
+//     title: "Elegant Classic Look",
+//     prompt:
+//       "Portrait of the same person styled as a 1950s movie star, with vintage hairstyle, elegant white shirt, pearl earrings, soft lighting and beige satin backdrop. Graceful pose, timeless elegance, high-definition, soft-focus classic studio lighting. Vogue-style editorial.",
+//   },
+//   {
+//     beforeImg: "/Profile.png",
+//     afterImg: "/GeneratedImg.png",
+//     title: "Warrior from Fantasy Realm",
+//     prompt:
+//       "Fantasy portrait of the same person as a battle-hardened warrior wearing a silver armor, holding a glowing sword, standing on a misty cliff with stormy skies. Cinematic mood, detailed textures, epic high-fantasy character shot, dramatic lighting, 4K game-art style.",
+//   },
+// ];
 
 export default function Home() {
   return (
@@ -142,7 +143,7 @@ export default function Home() {
               Most Popular Prompts
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover what's trending in the AI community right now
+              Discover what&apos;s trending in the AI community right now
             </p>
             {/* Prompt cards grid container */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
