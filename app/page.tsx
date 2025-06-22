@@ -147,7 +147,7 @@ export default function Home() {
             </p>
             {/* Prompt cards grid container */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
-              {promptCards.map((card, idx) => (
+               {promptCards.slice(0, 3).map((card, idx) => (
                 <PromptCard
                   key={idx}
                   beforeImg={card.beforeImg}
@@ -155,7 +155,7 @@ export default function Home() {
                   title={card.title}
                   prompt={card.prompt}
                 />
-              ))}
+                ))}
             </div>
           </section>
         </main>
