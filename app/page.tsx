@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import MasonryGridCard from "@/components/ui/MasonryGridCard";
 import Link from "next/link";
 import { promptCards } from "./prompts";
+import { Home as HomeIcon, List } from "lucide-react";
 
 const stats = [
   { id: 1, label: "Prompts", value: "12.5k+" },
@@ -12,21 +13,22 @@ const stats = [
 export default function Home() {
   return (
     <>
-      <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen p-8 pt-0 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-purple-600/10 ">
-        <header className="sticky top-4 z-50 bg-white shadow-lg dark:bg-black/50 rounded-md px-8 py-6 flex items-center justify-between w-full max-w-[80vw]">
-          {/* <h1>Prompty</h1> */}
+      <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen pb-20 gap-16 pt-16 sm:pt-16 p-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-purple-600/10 ">
+        <header className="sticky top-4 z-50 bg-white shadow-lg dark:bg-black/50 rounded-md px-8 py-6 flex items-center justify-between w-full max-w-[80vw] hidden lg:flex">
           <div className="flex flex-col items-start">
             <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent text-3xl sm:text-4xl font-bold tracking-tight">
               Prompty
             </h1>
-            {/* <h3 className="text-gray-600 text-sm font-medium ml-4">
-              Prompt. Pin. Inspire.
-            </h3> */}
           </div>
-          {/* <h3>Prompt. Pin. Inspire.</h3> */}
           <Link href="/prompts">
             <div className="cursor-pointer font-bold">Prompts</div>
           </Link>
+        </header>
+
+        <header className="flex items-center justify-center w-full py-6 px-4 lg:hidden">
+          <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent text-6xl sm:text-7xl font-extrabold tracking-tight">
+            Prompty
+          </h1>
         </header>
 
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start ">
@@ -80,10 +82,12 @@ export default function Home() {
                 <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
                   {stats.map((stat) => (
                     <div key={stat.id} className="text-center">
-                      <div className="text-3xl font-bold text-gray-900">
+                      <div className="text-lg font-bold text-gray-900 lg:text-3xl md:text-xl">
                         {stat.value}
                       </div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
+                      <div className="text-xs text-gray-600 md:text-sm lg:text-base">
+                        {stat.label}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -93,7 +97,6 @@ export default function Home() {
 
           {/* Most Popular Prompts Section */}
           <section className="flex flex-col gap-[16px] items-center justify-center w-full bg-white/50 dark:bg-black/50 rounded-md p-8">
-            {/* trending this week tag with icon */}
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-100 to-red-100 rounded-full px-4 py-2 mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,13 +117,14 @@ export default function Home() {
                 Trending This Week
               </span>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Most Popular Prompts
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover what&apos;s trending in the AI community right now
-            </p>
-            {/* Prompt cards grid container */}
+            <div className="text-center w-full">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Most Popular Prompts
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Discover what&apos;s trending in the AI community right now
+              </p>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
               {promptCards.slice(0, 3).map((card, idx) => (
                 <MasonryGridCard key={card.id} card={card} />
@@ -129,8 +133,29 @@ export default function Home() {
           </section>
         </main>
       </div>
+      {/* Floating Bottom Bar: visible only on mobile/tablet (max-width: 1024px) */}
+      <nav className="fixed bottom-0 left-0 w-full z-50 bg-white/70 dark:bg-black/90 border-t border-gray-200 dark:border-gray-800 flex justify-around items-center py-2 shadow-lg lg:hidden">
+        <Link
+          href="/"
+          className="flex flex-col items-center gap-1 px-4 py-1 group"
+        >
+          <HomeIcon className="w-6 h-6 text-black dark:text-gray-200 group-hover:text-purple-600 transition-colors" />
+          <span className="text-xs text-black dark:text-gray-200 group-hover:text-purple-600 font-bold">
+            Home
+          </span>
+        </Link>
+        <Link
+          href="/prompts"
+          className="flex flex-col items-center gap-1 px-4 py-1 group"
+        >
+          <List className="w-6 h-6 text-black dark:text-gray-200 group-hover:text-orange-600 transition-colors" />
+          <span className="text-xs text-black dark:text-gray-200 group-hover:text-orange-600 font-bold">
+            Prompts
+          </span>
+        </Link>
+      </nav>
       <footer className="w-full left-0 flex flex-col gap-2 items-center justify-between bg-black p-8 text-white relative">
-        <div className="w-full flex flex-row items-center justify-between text-sm text-gray-600 dark:text-gray-400">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600 dark:text-gray-400 gap-2 text-center">
           <span>© 2025 Prompty. All rights reserved.</span>
           <span>
             Made with&nbsp;
@@ -141,9 +166,8 @@ export default function Home() {
           </span>
         </div>
         <div className="w-full flex justify-center">
-          {/* <span className="font-bold text-lg">Prompty</span> */}
           <div className="relative overflow-hidden w-full">
-            <h2 className="text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10rem] font-bold text-center tracking-tighter leading-none w-full mx-auto bg-gradient-to-b from-orange-500/80 to-orange-500/20 bg-clip-text text-transparent break-words block opacity-100">
+            <h2 className="text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10rem] font-bold text-center tracking-tighter leading-none w-full mx-auto bg-gradient-to-b from-orange-500/80 to-orange-500/20 bg-clip-text text-transparent break-words block opacity-100 mb-12 lg:mb-0">
               Prompty
             </h2>
           </div>
