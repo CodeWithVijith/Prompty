@@ -126,7 +126,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
-              {promptCards.slice(0, 3).map((card, idx) => (
+              {promptCards.slice(0, 3).map((card) => (
                 <MasonryGridCard key={card.id} card={card} />
               ))}
             </div>
