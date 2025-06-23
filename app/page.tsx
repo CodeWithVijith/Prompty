@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { PromptCard } from "@/components/ui/PromptCard";
+import MasonryGridCard from "@/components/ui/MasonryGridCard";
 import Link from "next/link";
 import { promptCards } from "./prompts";
 
@@ -8,31 +8,6 @@ const stats = [
   { id: 2, label: "Creators", value: "50k+" },
   { id: 3, label: "Downloads", value: "2M+" },
 ];
-
-// Add prompt data array
-// const promptCards = [
-//   {
-//     beforeImg: "/Profile.png",
-//     afterImg: "/GeneratedImg.png",
-//     title: "Cyberpunk Street Style",
-//     prompt:
-//       "Ultra-detailed portrait of same person in image, dressed in cyberpunk attire with glowing neon accents, leather jacket, tech goggles, and vibrant blue-purple cityscape background. Futuristic lighting, cinematic composition, sci-fi fashion editorial. 4K, high-detail, dramatic shadows.",
-//   },
-//   {
-//     beforeImg: "/Profile.png",
-//     afterImg: "/GeneratedImg.png",
-//     title: "Elegant Classic Look",
-//     prompt:
-//       "Portrait of the same person styled as a 1950s movie star, with vintage hairstyle, elegant white shirt, pearl earrings, soft lighting and beige satin backdrop. Graceful pose, timeless elegance, high-definition, soft-focus classic studio lighting. Vogue-style editorial.",
-//   },
-//   {
-//     beforeImg: "/Profile.png",
-//     afterImg: "/GeneratedImg.png",
-//     title: "Warrior from Fantasy Realm",
-//     prompt:
-//       "Fantasy portrait of the same person as a battle-hardened warrior wearing a silver armor, holding a glowing sword, standing on a misty cliff with stormy skies. Cinematic mood, detailed textures, epic high-fantasy character shot, dramatic lighting, 4K game-art style.",
-//   },
-// ];
 
 export default function Home() {
   return (
@@ -148,13 +123,7 @@ export default function Home() {
             {/* Prompt cards grid container */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
               {promptCards.slice(0, 3).map((card, idx) => (
-                <PromptCard
-                  key={idx}
-                  beforeImg={card.beforeImg}
-                  afterImg={card.afterImg}
-                  title={card.title}
-                  prompt={card.prompt}
-                />
+                <MasonryGridCard key={card.id} card={card} />
               ))}
             </div>
           </section>
