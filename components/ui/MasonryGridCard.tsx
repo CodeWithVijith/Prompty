@@ -36,9 +36,10 @@ const MasonryGridCard: React.FC<MasonryGridCardProps> = ({ card }) => {
       <Image
         src={card.beforeImg}
         alt={card.title}
+        width={400}
+        height={card.height || 300}
         style={{
           width: "100%",
-          height: card.height,
           minHeight: "300px",
           objectFit: "cover",
           display: "block",
@@ -52,9 +53,10 @@ const MasonryGridCard: React.FC<MasonryGridCardProps> = ({ card }) => {
       <Image
         src={card.afterImg}
         alt={card.title + " after"}
+        width={400}
+        height={card.height || 300}
         style={{
           width: "100%",
-          height: card.height,
           minHeight: "300px",
           objectFit: "cover",
           display: "block",
