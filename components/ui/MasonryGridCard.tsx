@@ -7,7 +7,6 @@ import { toast } from "sonner";
 interface MasonryGridCardProps {
   card: {
     id: number;
-    beforeImg: string;
     afterImg: string;
     title: string;
     prompt: string;
