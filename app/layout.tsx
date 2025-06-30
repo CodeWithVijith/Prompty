@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prompty.in - AI Prompt Marketplace",
+  title: "Prompty.in - One stop solution for AI Prompts",
   description:
     "Discover and share the most viral AI image prompts. Perfect for stunning visuals, Reels, and creative projects.",
 };
