@@ -1,19 +1,18 @@
+"use client";
+import { promptCards } from "@/app/prompts";
 import { ChatGPTIcon } from "@/components/icons/ChatGPTIcon";
-import { WhatsappIcon } from "@/components/icons/WhatsappIcon";
 import { CopyIcon } from "@/components/icons/CopyIcon";
+import { WhatsappIcon } from "@/components/icons/WhatsappIcon";
 import { Button } from "@/components/ui/button";
 import { Home as HomeIcon, List } from "lucide-react";
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "How to Use Prompt – Prompty",
-  description:
-    "Follow this step-by-step guide to use AI image prompts effectively with ChatGPT or WhatsApp and get the perfect image output.",
-};
-
+import { useParams } from "next/navigation";
 export default function PromptDetailsPage() {
+  const params = useParams();
+  const id = params.id;
+  const selectedCard = promptCards.find((card) => card.id === Number(id));
+
   return (
     <>
       <div className="grid grid-rows-[20px_1fr] items-center justify-items-center min-h-screen pb-20 gap-16 pt-16 sm:pt-16 p-8 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-purple-600/10 ">
@@ -59,7 +58,7 @@ export default function PromptDetailsPage() {
                   After
                 </h2>
                 <Image
-                  src="https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg31.webp"
+                  src={selectedCard?.afterImg as string}
                   alt="After"
                   width={600}
                   height={600}
@@ -73,12 +72,7 @@ export default function PromptDetailsPage() {
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-white">
                 Prompt:
               </h3>
-              <p>
-                A highly stylized portrait of the same person in image with
-                sharp features, flawless fair skin, wearing a black t-shirt,
-                black sunglasses and standing against a bold red gradient
-                background, confidently.
-              </p>
+              <p>{selectedCard?.prompt}</p>
             </div>
 
             {/* Steps */}
@@ -109,7 +103,8 @@ export default function PromptDetailsPage() {
                   to explore our collection of viral prompts.
                 </li>
                 <li>
-                  Click on your preferred prompt card. You&apos;ll see three icons:
+                  Click on your preferred prompt card. You&apos;ll see three
+                  icons:
                   <ul className="list-disc list-inside ml-4 mt-2">
                     <li>
                       <strong className="inline-flex items-center gap-1">
