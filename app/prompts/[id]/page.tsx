@@ -109,7 +109,7 @@ export default function PromptDetailsPage() {
                   to explore our collection of viral prompts.
                 </li>
                 <li>
-                  Click on your preferred prompt card. You'll see three icons:
+                  Click on your preferred prompt card. You&apos;ll see three icons:
                   <ul className="list-disc list-inside ml-4 mt-2">
                     <li>
                       <strong className="inline-flex items-center gap-1">
