@@ -298,6 +298,83 @@ Keep the face exactly the same Add a green tracksuit with a white number tan, di
   //     "A sophisticated man (Uploaded image if for reference) with a modern yet classic look is sitting confidently in a luxurious, vintage-style armchair inside an opulent, wood-paneled room. He is wearing a dark charcoal pinstriped three-piece suit over a white shirt. Behind him hangs a large, framed oil painting that mirrors his posture and style. The lighting is cinematic and dramatic, and the image should have artistic, editorial quality like a Vanity Fair or GQ magazine shoot.",
   //   height: 547,
   // },
+  {
+    id: 36,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg36.png`,
+    title: "Reach for the Glow: The Astronaut Among Jellyfish",
+    prompt:
+      "Upclose underwater photo of a young man underwater in an astronaut suit white no helmet, he wears sunglasses, his face is looking up at a jellyfish that is floating right above him, photo taken from his side profile, his pointer finger is reaching for the jellyfish, there is a jellyfish right in front of his face, no astraunaut helmet, dark lighting, there are a lot of small glowing jellyfish that are emitting light in the water around him, water bubbles, he has no helmet on, shot on a 135mm lens. ",
+    height: 547,
+  },
+  {
+    id: 37,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg37.png`,
+    title: "Edge of Glamour: Streetwear Silhouettes in Cinematic Light",
+    prompt:
+      "A hyper-stylized fashion portrait of the same person in the reference image, standing beside a sleek car under intense orange and red lighting. The person wears oversized graphic streetwear with bold prints, patterned shorts, layered silver chains, and black round sunglasses. The lighting is harsh and directional, casting deep shadows and creating a strong, cinematic silhouette effect. The background features a vibrant orange gradient wall with a sharp shadow line, evoking a luxury fashion campaign look. The overall mood is bold, edgy, high-fashion, with a modern street style aesthetic.",
+    height: 547,
+  },
+  {
+    id: 38,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg38.png`,
+    title:
+      "Confidence in Color: A Quirky, Editorial Portrait with Vintage Flair and a Loyal Companion",
+    prompt:
+      "A bold and stylish indoor portrait of me sitting confidently in a large vintage floral armchair in a cozy, warmly lit living room. I am wearing a striking white suit with black polka dots, paired with glossy light-pink lace-up boots. I have red sunglasses on, and a calm, expressive face. A relaxed dog (like a Labrador or Beagle) sits on my lap, comfortably resting its head on my hands. The room features classic wallpaper, a window with soft daylight filtering through sheer curtains, and wooden floors with a patterned rug. The aesthetic is fashion-forward, quirky, and editorial, with sharp focus and vibrant colors.",
+    height: 547,
+  },
+  {
+    id: 39,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg39.png`,
+    title:
+      "The Modern Gentleman: A High-Fashion, Cinematic Portrait of Confidence",
+    prompt:
+      "A hyper-realistic portrait of a confident man sitting on a vintage brown leather sofa in a dark studio setting. He is wearing a black suit with a white shirt, no tie, and has a serious expression. His arms are resting on the backrest, legs crossed. He has visible tattoos on his neck and hands. The lighting is dramatic, focused on the subject, creating a high-contrast, cinematic mood. The background is pure black, emphasizing the subject’s pose and style. Shot from a low angle, full body in frame, high fashion editorial style",
+    height: 547,
+  },
+
+  {
+    id: 40,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg40.png`,
+    title: "Paparazzi Flash: A Vintage Icon in the Spotlight",
+    prompt:
+      "Create a cinematic, vintage-toned photo featuring the same person from the reference image. He stands confidently, leaning slightly back against a railing, smiling while surrounded by a crowd of enthusiastic people holding smartphones and cameras as if he's a celebrity. The man wears round black sunglasses, a dark olive-green double-breasted blazer, and cream-colored wide-leg trousers with hands in pockets. The overall style should reflect 1960s-1970s paparazzi aesthetics with rich, warm sepia tones and dra-matic soft lighting. Capture a candid, joyful, high-fashion moment, ultra-realistic, editorial quality.",
+    height: 547,
+  },
+
+  ///
+
+  {
+    id: 41,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg41.png`,
+    title:
+      "Ring Kings: Cinematic Boxing Duo in Brown Herringbone – Vintage Poster-Inspired Power Stance",
+    prompt: `A cinematic duo standing together boldly gives off cold vibes and expression. Wearing black sunglasses, Style the person as a strong, focused boxer Wearing a Brown Herringbone 3-Piece Suit. one person is adjusting fists wrapped in tape. another one is fists wrapped in tape. Set the subject against a bold red background. The lighting is dramatic and cinematic, emphasizing his facial structure and the overall mood should be intense, by vintage boxing posters." realistic, high-detail, powerful, and artistic - inspired by vintage boxing posters 8K resolution, symmetrical composition, minimal background elements. 4:3 ratio.`,
+    height: 547,
+  },
+  {
+    id: 42,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg42.png`,
+    title:
+      "The Reign of Opulence: A High-Fashion Portrait Amid Baroque Splendor",
+    prompt: `Create a luxurious, high-fashion portrait of me standing confidently in front of an ornate baroque-style background filled with rich red roses, golden gears, and classical gold sculptures and medallions. I am wearing an elaborately embroidered black velvet outfit with intricate gold detailing, layered gold jewelry, and round sunglasses. The lighting is dramatic and editorial, with deep shadows and sharp highlights to emphasize the opulence. The mood is bold, regal, and inspired by high-fashion campaigns like Dolce & Gabbana or Versace.`,
+    height: 547,
+  },
+  {
+    id: 43,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `/GeneratedImg43.png`,
+    title: "Contemplation Among the Sacred: A Portrait in Color and Light",
+    prompt: `A cinematic portrait of me standing in front of a colorful, religious-style mural featuring painted figures with halos and symbolic elements. I am wearing a dark shirt with bold, embroidered floral patterns in red, green, and beige. My hair is perfectly styled with volume and texture, and I have a well-groomed beard. The expression on my face is contemplative and serious as I look off to the side. The lighting is warm and soft, creating depth and highlighting the textures of the shirt and mural. The background is artistically blurred to create a shallow depth of field, emphasizing both me and the vivid mural behind me. The overall tone is rich, dramatic, and painterly.`,
+    height: 547,
+  },
 ];
 
 // https://n8n-github-files.s3.eu-north-1.amazonaws.com/Profile.webp
