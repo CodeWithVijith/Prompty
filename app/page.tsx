@@ -52,7 +52,7 @@ export default function Home() {
                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                   </svg>
                   <span className="text-sm font-medium text-purple-700 ">
-                    12.5k+ Premium AI Prompts
+                    {promptCards.length}+ Premium AI Prompts
                   </span>
                 </div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
@@ -79,7 +79,7 @@ export default function Home() {
                     </Button>
                   </Link>
                 </div>
-                <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+                {/* <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
                   {stats.map((stat) => (
                     <div key={stat.id} className="text-center">
                       <div className="text-lg font-bold text-gray-900 lg:text-3xl md:text-xl">
@@ -90,7 +90,7 @@ export default function Home() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
@@ -114,7 +114,8 @@ export default function Home() {
                 <polyline points="16 7 22 7 22 13"></polyline>
               </svg>
               <span className="text-sm font-medium text-orange-700">
-                Trending This Week
+                {/* Trending This Week */}
+                Trending
               </span>
             </div>
             <div className="text-center w-full">
@@ -126,7 +127,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
-                {promptCards
+              {promptCards
                 .sort(() => 0.5 - Math.random())
                 .slice(0, 3)
                 .map((card) => (
