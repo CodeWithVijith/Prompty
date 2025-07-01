@@ -4,11 +4,11 @@ import Link from "next/link";
 import { promptCards } from "./prompts";
 import { Home as HomeIcon, List } from "lucide-react";
 
-const stats = [
-  { id: 1, label: "Prompts", value: "12.5k+" },
-  { id: 2, label: "Creators", value: "50k+" },
-  { id: 3, label: "Downloads", value: "2M+" },
-];
+// const stats = [
+//   { id: 1, label: "Prompts", value: "12.5k+" },
+//   { id: 2, label: "Creators", value: "50k+" },
+//   { id: 3, label: "Downloads", value: "2M+" },
+// ];
 
 export default function Home() {
   return (
