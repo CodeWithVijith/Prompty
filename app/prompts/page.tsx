@@ -7,17 +7,7 @@ import { Home as HomeIcon, List } from "lucide-react";
 // Masonry Grid Component
 const MasonryGrid: React.FC = () => {
   return (
-    <div
-      className="
-                mx-auto my-10
-                [column-count:1]
-                sm:[column-count:2]
-                md:[column-count:3]
-                lg:[column-count:4]
-                [column-gap:16px]
-                max-w-[1200px]
-            "
-    >
+    <div className="mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-[1200px]">
       {promptCards.map((card) => (
         <MasonryGridCard key={card.id} card={card} />
       ))}
