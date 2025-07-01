@@ -3,6 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Geist Mono";
+  src: url("https://fonts.gstatic.com/s/geistmono/v3/or3nQ6H-1_WfwkMZI_qYFrcdmhHkjko.woff2")
+    format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-00FF;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
