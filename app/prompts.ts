@@ -375,6 +375,23 @@ Keep the face exactly the same Add a green tracksuit with a white number tan, di
     prompt: `A cinematic portrait of me standing in front of a colorful, religious-style mural featuring painted figures with halos and symbolic elements. I am wearing a dark shirt with bold, embroidered floral patterns in red, green, and beige. My hair is perfectly styled with volume and texture, and I have a well-groomed beard. The expression on my face is contemplative and serious as I look off to the side. The lighting is warm and soft, creating depth and highlighting the textures of the shirt and mural. The background is artistically blurred to create a shallow depth of field, emphasizing both me and the vivid mural behind me. The overall tone is rich, dramatic, and painterly.`,
     height: 547,
   },
+  {
+    id: 44,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg44.webp`,
+    title: "A Modern Mixed-Media Portrait",
+    prompt: `Create a vibrant, expressive portrait in a mixed-media sketch style. The subject has thick, curly, dark hair and wears a simple dark shirt. The artwork should feature dynamic, energetic pencil lines and crosshatching, with splashes of vivid colors—especially reds, blues, and oranges—scattered across the background and neck area. The overall composition should feel spontaneous and artistic, with visible sketch marks and abstract color bursts, giving the piece a modern, creative, and slightly chaotic look.`,
+    height: 547,
+  },
+  {
+    id: 45,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg45.webp`,
+    title:
+      "Expressive Sketch-Art Digital Portrait: Bold Strokes in Orange and Black",
+    prompt: `Create a digital portrait in a sketch-art style, featuring a person with short, dark, tousled hair and wearing red-rimmed glasses. The subject is dressed in a vivid orange jacket over a black shirt. The background should have a textured, hand-drawn look with abstract lines and crosshatching, giving the image an expressive, artistic feel. Emphasize bold, dynamic strokes and a slightly rough, energetic composition. The overall color palette should highlight oranges, reds, and blacks, with a creative, modern illustration vibe.`,
+    height: 547,
+  },
 ];
 
 // https://n8n-github-files.s3.eu-north-1.amazonaws.com/Profile.webp
