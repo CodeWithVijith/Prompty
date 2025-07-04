@@ -127,9 +127,14 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl justify-items-center">
-              {promptCards
+              {/* {promptCards
                 .sort(() => 0.5 - Math.random())
                 .slice(0, 3)
+                .map((card) => (
+                  <MasonryGridCard key={card.id} card={card} />
+                ))} */}
+              {promptCards
+                .filter((card) => [46, 47, 48].includes(card.id))
                 .map((card) => (
                   <MasonryGridCard key={card.id} card={card} />
                 ))}
