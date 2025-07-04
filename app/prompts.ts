@@ -392,6 +392,34 @@ Keep the face exactly the same Add a green tracksuit with a white number tan, di
     prompt: `Create a digital portrait in a sketch-art style, featuring a person with short, dark, tousled hair and wearing red-rimmed glasses. The subject is dressed in a vivid orange jacket over a black shirt. The background should have a textured, hand-drawn look with abstract lines and crosshatching, giving the image an expressive, artistic feel. Emphasize bold, dynamic strokes and a slightly rough, energetic composition. The overall color palette should highlight oranges, reds, and blacks, with a creative, modern illustration vibe.`,
     height: 547,
   },
+  {
+    id: 46,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg46.webp`,
+    title: "The Charismatic Enigma: A Bold All-Black Elegance",
+    prompt: `A stylish man in a sleek, all-black outfit poses confidently against a pitch-black background.
+He wears a tailored black suit, a black shirt with the top buttons open, black sunglasses and a well-groomed beard, exuding charisma and mystery. A luxury wristwatch glints on his left wrist. The lighting is dramatic, highlighting his facial features and casting soft shadows, creating a bold, high-fashion editorial look.`,
+    height: 547,
+  },
+  {
+    id: 47,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg47.webp`,
+    title: "Teal Veil: Among the Crowd",
+    prompt: `Ultra-realistic cinematic portrait of a me (uploaded photo as reference) close-up composition. Dramatic red & teal split lighting creating high contrast on face & hands Moody atmosphere with soft smoke or mist in the background and crowd of peoples. Wearing a black turtleneck dark clothing.
+Sharp jawline, tousled hair, intense expression with hand posed near chin. Studio-quality lighting with gel accents. 4K resolution, fashion editorial style,
+shallow depth.`,
+    height: 547,
+  },
+  {
+    id: 48,
+    // afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg35.webp`,
+    afterImg: `https://n8n-github-files.s3.eu-north-1.amazonaws.com/GeneratedImg48.webp`,
+    title: "Veil of Introspection",
+    prompt: `Create an ultra-realistic black and white portrait of me based on the provided selfie. I should be posed with my hands pressed together in a prayer-like position directly in front of my face, with fingertips aligned just under my nose - creating perfect vertical symmetry. My eyes should be covered with round vintage sunglasses. Keep my natural hairstyle and beard exactly as in my selfie.
+I’m wearing a textured suit jacket with a shirt underneath, resembling a modern, sharp formal look. The lighting is moody and high contrast, with soft shadows that sculpt my facial features and hands. The background is minimal, dark, and blurred to ensure the focus stays on me. Maintain a dramatic, cinematic tone - the vibe should feel mysterious, introspective, and editorial. 8K resolution, portrait orientation.`,
+    height: 547,
+  },
 ];
 
 // https://n8n-github-files.s3.eu-north-1.amazonaws.com/Profile.webp
